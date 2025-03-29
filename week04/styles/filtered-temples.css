@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #ff6e00;
+    --secondary-color: #150000;
+    --accent-color1: #ffff00;
+    --accent-color2: #cecfcb;
+
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Montesrrat', serif;
+}
+
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.temple_pictures {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #cecfcb;
+}
+
+/* Mobile View ***************/
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: #ace;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+figure {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    /* padding: 0;
+    background-color: var(--secondary-color);
+    color: #ccfbff; */
+}
+
+/* figure:hover {
+    transform: scale(1.5);
+} */
+
+figcaption {
+    /* text-align: center; */
+    padding: .5rem;
+}
+
+
+footer {
+    text-align: center;
+    line-height: 15px;
+    background-color: black;
+    padding: 0.8rem 0;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}

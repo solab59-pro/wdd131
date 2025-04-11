@@ -1,0 +1,85 @@
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align:center;
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing:border-box;
+    color: white;
+    background-color: black;
+}
+
+form {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #b2aed8;
+
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 16px);
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    unicode-bidi: isolate;
+    padding-inline: 2px;
+}
+
+div {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    height: 150px;
+}
+
+footer {
+    text-align: center;
+    line-height: 15px;
+    background-color: black;
+    padding: 0.8rem 0;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}

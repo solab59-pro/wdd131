@@ -51,7 +51,7 @@ const reasons = [
 
 // Populate the destination options
 const reasonsSelect = document.getElementById("reasons");
-reasons.forEach(destination => {
+reasons.forEach(reasons => {
     const option = document.createElement("option");
     option.value = reasons.id;
     option.textContent = reasons.name;

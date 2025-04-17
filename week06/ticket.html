@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Solomon John Ekaette | WDD 131 | Ticket Booking Page</title>
+    <meta name="description" content="Solomon John Ekaette | Ticket Booking .">
+    <meta name="author" content="Solomon John Ekaette">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/solab_transport.css">
+    <script src="scripts/solab_transport.js" defer=""></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/solab_logo1.jpg" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="ticket.html">Ticket Booking</a>
+        </nav>
+    </header>
+    <h1>TRAVELLING FORM/TICKET BOOKING</h1>
+    <form method="get" action="ticketbook.html">
+        <fieldset>
+            <legend>Passenger's Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone Number<input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label>Website<input type="url" name="url" placeholder="http://"></label>
+        </fieldset>
+    
+        <label>Travel Destination And Price</label>
+        <select name="destination" required>
+            <option value="">Choose your destination</option>
+            <option value="abia">Lagos - Aba (#20000)</option>
+            <option value="abuja">Lagos - Abuja (#25000)</option>
+            <option value="edo">Lagos - Edo (#30000)</option>
+            <option value="jigawa">Lagos - Jigawa (#40000)</option>
+            <option value="kwara">Lagos - Kwara (#45000)</option>
+            
+        </select>
+    
+        <label>Date of travelling</label>
+        <input type="date" name="completeDate" required>
+    
+        
+        <input type="submit" value="Book Your Ticket">
+    
+    </form>
+    
+    </main>
+    
+    <!-- FOOTER HERE -->
+    <footer>
+        <p>
+            ©
+            <span id="currentyear">2025</span>
+            🌴Solomon John Ekaette 🌴 Akwa Ibom State
+        </p>
+        <p>
+            Last Modified :
+            <span id="lastModified">Sat April 07 2025 12:25:07 GMT+1</span>
+        </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook" width="50">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.jpg" alt="Twitter" width="50">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram" width="50">
+            </a>
+        </nav>
+    </footer>
+   
+    </body>
+    
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Solomon John Ekaette | WDD 131 | Contact Page</title>
+    <meta name="description" content="Solomon John Ekaette | Contact Page">
+    <meta name="author" content="Solomon John Ekaette">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/solab_transport.css">
+    
+   
+    <script src="solab_transport.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/solab_logo1.jpg" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="ticket.html">Ticket Booking</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <h1 class="title center">Contact Us</h1>
+        <div>
+            <form method="get" action="contact_reply.html">
+                <fieldset>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Phone Number<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                </fieldset>
+                
+                <label>Reason for contacting us</label>
+                <select name="reasons" required>
+                    <option value="">Select a reason</option>
+                    <option value="enquiry">General Enquiry</option>
+                    <option value="question">Reservation Question</option>
+                    <option value="satisfaction">Customers' Satisfaction</option>  
+                </select>  
+                <label for="comment">Please enter your comment:</label>
+                <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
+                <div class="signup">
+                    <input type="checkbox" name="subscribe" id="newspaper">
+                    <label for="newspaper">Please subscribe me to the monthly newspaper</label>
+                </div>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        <section class="address">
+            <h2 class="center">Company Address on Map</h2>
+            <p> No 18 Kadiri street, Coker, Lagos State</p>
+         
+            
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d91413.12877767532!2d3.367744463943748!3d6.503442306881441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1739057297015!5m2!1sen!2sng"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©
+            <span id="currentyear">2025</span>
+            🌴Solomon John Ekaette 🌴 Akwa Ibom State
+        </p>
+        <p>
+            Last Modified :
+            <span id="lastModified">Sat April 07 2025 12:25:07 GMT+1</span>
+        </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook" width="50">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.jpg" alt="Twitter" width="50">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #ff6e00;
+    --secondary-color: #150000;
+    --accent-color1: #ffff00;
+    --accent-color2: #cecfcb;
+
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Montesrrat', serif;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1em;
+    font-family: var(--heading-font);
+    color: var(--accent-color1);
+}
+
+nav a:hover {
+    background-color: white;
+    color: #484029;
+}
+
+.colorscheme {
+    color: var(--secondary-color);
+}
+
+
+
+h1 {
+    text-align: center;
+    margin:10px auto;
+    width: 80%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+form {
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #b2aed8;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 16px);
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    unicode-bidi: isolate;
+    padding-inline: 2px;
+    margin:auto;
+    font-size: large;
+}
+
+div {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    height: 150px;
+}
+
+.address {
+    text-align: center;
+    max-width: 100%;
+}
+
+.gallery{
+    display: grid;
+    margin: 50px 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+footer {
+    text-align: center;
+    line-height: 15px;
+    background-color: black;
+    padding: 0.8rem 0;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}
